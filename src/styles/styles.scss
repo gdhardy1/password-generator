@@ -1,0 +1,58 @@
+body {
+	padding: 15px;
+	font-family: "Muli", sans-serif;
+}
+
+h1 {
+	font-size: 2.6rem;
+	margin: 5px 0;
+	text-align: center;
+}
+
+.generator {
+	margin: 0 auto;
+	max-width: 400px;
+	min-width: 330px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.output {
+	display: flex;
+	position: relative;
+	border: 1px solid #d1d1d1;
+	background-color: none;
+	padding: 5px;
+	margin-bottom: 40px;
+	margin-top: 15px;
+
+	&__password {
+		flex-grow: 1;
+		border: none;
+		resize: none;
+		height: 24px;
+		background-color: none;
+	}
+
+	&__copy {
+		background-color: none;
+		cursor: pointer;
+	}
+}
+
+.alert {
+	position: absolute;
+	color: #ffffff;
+	width: calc(100% - 30px);
+	font-size: 1rem;
+	border-radius: 5px;
+	bottom: 0;
+	padding: 10px;
+	z-index: -1;
+	background-color: red;
+	transition: all 0.5s;
+}
+
+.submit {
+	margin-top: 20px;
+}
