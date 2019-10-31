@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Password Generator</title>
+		<meta charset="UTF-8" />
+	</head>
+
+	<body>
+		<div class="generator card">
+			<h1>Password Generator</h1>
+			<div class="output">
+				<textarea
+					id="password"
+					class="output__password"
+					name="password"
+				></textarea>
+				<i
+					id="copy"
+					class="output__copy material-icons tooltipped"
+					data-position="bottom"
+					data-tooltip="Copy to Clipboard"
+					>content_copy</i
+				>
+			</div>
+			<div class="options">
+				<div class="options__pass-length input-field">
+					<input
+						id="pass-length"
+						class="validate"
+						type="number"
+						min="8"
+						max="128"
+						value="8"
+						required
+					/>
+					<label for="pass-length">Password Length</label>
+				</div>
+
+				<div class="options__uppercase">
+					<label for="uppercase">
+						<input
+							id="uppercase"
+							class="filled-in"
+							type="checkbox"
+							name="uc"
+							checked
+						/>
+						<span>Include uppercase letters</span>
+					</label>
+				</div>
+				<div class="options__lowercase">
+					<label for="lowercase">
+						<input
+							id="lowercase"
+							class="filled-in"
+							type="checkbox"
+							name="lc"
+							checked
+						/>
+						<span>Include lowercase letters</span>
+					</label>
+				</div>
+				<div class="options__numbers">
+					<label for="numbers">
+						<input
+							id="numbers"
+							class="filled-in"
+							type="checkbox"
+							name="num"
+						/>
+						<span>Include numbers</span>
+					</label>
+				</div>
+				<div class="options__symbols">
+					<label for="symbols">
+						<input
+							id="symbols"
+							class="filled-in"
+							type="checkbox"
+							name="sym"
+						/>
+						<span>Include symbols</span>
+					</label>
+				</div>
+			</div>
+			<div class="submit">
+				<button id="generate" class="waves-effect waves-light btn">
+					Generate Password
+				</button>
+			</div>
+			<div id="alert" class="alert">
+				Invalid password length. Length must be between 8 and 128
+				characters. Length must be a number.
+			</div>
+		</div>
+
+	</body>
+</html>
