@@ -1,5 +1,10 @@
-export const alertError = (): void => {
+export const alertError = (message: string): void => {
 	const alert: HTMLElement = document.getElementById("alert");
+
+	// Set alert message
+	alert.innerHTML = message;
+
+	// Get height of alert element
 	const slideDistance: number = -alert.clientHeight + 5;
 
 	// slide out alert message

@@ -4,7 +4,7 @@ import "./scripts/tooltip.js";
 import "./styles/styles.scss";
 
 import * as Password from "./scripts/passwordGen";
-import { validateLength } from "./scripts/validation";
+import { validate } from "./scripts/validation";
 
 const getPassField = () => {
 	return document.getElementById("password") as HTMLInputElement;
@@ -16,7 +16,7 @@ const outputPassword = () => {
 		Number((document.getElementById("pass-length") as HTMLInputElement).value)
 	);
 	// if length is valid
-	if (validateLength(length)) {
+	if (validate(length)) {
 		// generate a password
 		const password: string = Password.generate(length);
 		const output: HTMLInputElement = getPassField();
