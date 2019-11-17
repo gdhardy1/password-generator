@@ -1,5 +1,5 @@
 export const alertError = (message: string): void => {
-	const alert: HTMLElement = document.getElementById("alert");
+	const alert: HTMLElement = document.getElementById("alert")!;
 
 	// Set alert message
 	alert.innerHTML = message;

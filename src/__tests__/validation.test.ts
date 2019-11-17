@@ -10,7 +10,7 @@ jest.dontMock("fs");
 const html = fs.readFileSync(path.resolve(__dirname, "../index.html"), "utf8");
 
 document.documentElement.innerHTML = html.toString();
-let alert: HTMLElement = document.getElementById("alert");
+let alert: HTMLElement = document.getElementById("alert")!;
 
 describe("validate", () => {
 	const alertSpy = jest.spyOn(alerts, "alertError");

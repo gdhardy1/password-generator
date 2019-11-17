@@ -1,7 +1,5 @@
-import "./libraries/materialize/sass/materialize.scss";
 import "./libraries/materialize/js/materialize.min.js";
 import "./scripts/tooltip.js";
-import "./styles/styles.scss";
 
 import * as Password from "./scripts/passwordGen";
 import { validate } from "./scripts/validation";
@@ -32,8 +30,8 @@ const copyPass = () => {
 };
 
 // add event listeners for password gen and copy
-const generate: HTMLElement = document.getElementById("generate");
-const copy: HTMLElement = document.getElementById("copy");
+const generate: HTMLElement = document.getElementById("generate")!;
+const copy: HTMLElement = document.getElementById("copy")!;
 
 generate.addEventListener("click", outputPassword);
 copy.addEventListener("click", copyPass);
