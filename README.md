@@ -1,6 +1,6 @@
 # Password Generator
 
-A simple password generator project built with TypeScript. Check out the [app]() on Netlify.
+A simple password generator project built with TypeScript. Check out the [app](https://ts-pw-gen.netlify.com) on Netlify.
 
 ## About the Project
 
