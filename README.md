@@ -8,6 +8,7 @@ I used this project mainly as a way to gain deeper understanding of Webpack's co
 
 ## Technologies Used
 
+- Webpack
 - TypeScript
 - Jest
 - Materialize
